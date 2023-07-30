@@ -20,7 +20,7 @@
     {
       packages.default = nixpkgs.stdenv.mkDerivation {
         name = "fitness-tracker-frontend";
-        src = nixpkgs.nix-gitignore.gitignoreSource [ ".git" ] ./.;
+        src = ./.;
         nativeBuildInputs = [
             easy-purescript-nix.purs-0_14_0
         ] ++ (
