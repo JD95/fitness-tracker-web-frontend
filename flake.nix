@@ -30,6 +30,8 @@
         packages = pursTools;
       };
 
+      hydraJobs = { inherit (self) packages; };
+
       packages.default = nixpkgs.stdenv.mkDerivation {
         name = "fitness-tracker-frontend";
         src = ./.;
